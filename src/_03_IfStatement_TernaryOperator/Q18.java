@@ -2,13 +2,13 @@ package _03_IfStatement_TernaryOperator;
 
 import java.util.Scanner;
 
-public class NotHesaplama {
+public class Q18 {
     public static void main(String[] args) {
 
 
 
 
-        /*
+        /* TASK :
         1.Kullanıcıya    "Vize sınav sonucunuzu giriniz :"
         2.vize notu double değerinde girilecek.
 
@@ -24,7 +24,7 @@ public class NotHesaplama {
 
         8. Çıkan sonucu (dersin not ortalamasını)   double toplam  ' a eşitleyebilirsiniz.
 
-                                        todo    Koşul kısmı
+
 
                                         eğer ortalaması 90(90 dahil) 'dan büyük ise, harf notu olarak AA,
                                                                         80(80dahil)   ile 90 arasında ise  BA,
@@ -35,48 +35,6 @@ public class NotHesaplama {
                                                                      30(30 dahil) ile 40 arasında ise DD,
                                                                      30 'dan düşük ise FF            gelmeli.
          */
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("********NOT HESAPLAMA SİSTEMİ********\n");
-
-        System.out.print("Vize sınav sonucunuzu giriniz : ");
-        double vize = sc.nextDouble();
-
-        System.out.print("Vize sınavı yüzdesini giriniz: ");
-        double vize_yuzde = sc.nextDouble();
-
-        System.out.print("Final sınav sonucunuzu giriniz : ");
-        double fin = sc.nextDouble();
-
-        System.out.print("Final sınavı yüzdesini giriniz: ");
-        double fin_yuzde = sc.nextDouble();
-
-        System.out.println("*************************************");
-
-        double ort = vize * (vize_yuzde / 100) + fin * (fin_yuzde / 100);
-
-        System.out.println("Ortalamanız Sayı ile : " + ort);
-        System.out.print("Ortalamanız Harf ile : ");
-
-        if (ort >= 90) {
-            System.out.println("AA aldınız...");
-        } else if (ort >= 80) {
-            System.out.println("BA aldınız...");
-        } else if (ort >= 70) {
-            System.out.println("BB aldınız...");
-        } else if (ort >= 60) {
-            System.out.println("CB aldınız...");
-        } else if (ort >= 50) {
-            System.out.println("CC aldınız...");
-
-        } else if (ort >= 40) {
-            System.out.println("DC aldınız...");
-        } else if (ort >= 30) {
-            System.out.println("DD aldınız...");
-
-        } else {
-            System.out.println("FD aldınız ve Kaldınız...");
-        }
 
     }
 }

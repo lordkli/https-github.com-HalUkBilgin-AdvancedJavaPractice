@@ -6,8 +6,9 @@ public class Q10 {
     public static void main(String[] args) {
 
         /*
-        Kulanıcıdan aracının hızını alınız
-        Trafik cezasının değerini hesaplayın.
+            TASK :
+            Kulanıcıdan aracının hızını alınız
+            Trafik cezasının değerini hesaplayın.
             45 hız sınırıdır.
             Eğer hızınız 55-74 arasında ise:
             Ceza 100 $'dır.
@@ -41,44 +42,7 @@ public class Q10 {
             sonuç 300 olmalıdır.
      */
 
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Ehliyetiniz var ise 1 , yoksa 0 yazınız : ");
 
-        int ehliyet = scan.nextInt();
-
-        System.out.print("Hızınızı giriniz : ");
-
-        int hız = scan.nextInt();
-
-        if (ehliyet == 1) {
-            if (hız < 0) {
-                System.out.println("hatalı veri girdiniz");
-            } else if (hız > 54 && hız < 75) {
-                System.out.println("Ceza 100 $'dır.");
-            } else if (hız >= 75 && hız < 85) {
-                System.out.println("Ceza 150 $'dır.");
-            } else if (hız >= 85 && hız < 95) {
-                System.out.println("Ceza 320 $'dır.");
-            } else if (hız >= 95) {
-                System.out.println("Ceza 500 $'dır.");
-            } else {
-                System.out.println("Hız Sınırında seyahat ediyorsunuz hayırlı yolculuklar.. ");
-            }
-        } else if (ehliyet == 0) {
-            if (hız > 54 && hız < 75) {
-                System.out.println("Ceza 300 $'dır.");
-            } else if (hız >= 75 && hız < 85) {
-                System.out.println("Ceza 350 $'dır.");
-            } else if (hız >= 85 && hız < 95) {
-                System.out.println("Ceza 520 $'dır.");
-            } else if (hız >= 95) {
-                System.out.println("Ceza 700 $'dır.");
-            } else {
-                System.out.println("Sadece Ehliyetsiz kullanımdan dolayı cezanız  200 $'dır. ");
-            }
-        } else {
-            System.out.println("Lütfen Geçerli Bir değer Giriniz!");
-        }
 
     }
 }
