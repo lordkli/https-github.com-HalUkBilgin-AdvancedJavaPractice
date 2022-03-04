@@ -27,6 +27,5 @@ public class Q01 {
         } else if (islem == 4) {
             System.out.println("carpma işleminin sonucu :" + num1 + " x " + num2 + " = " + (num1 * num2));
         } else System.out.println("hatalı secim yaptınız tekrar deneyiniz");
-
     }
 }

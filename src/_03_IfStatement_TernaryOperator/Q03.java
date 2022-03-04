@@ -18,23 +18,23 @@ public class Q03 {
 		 */
 
 
-        Scanner scan = new Scanner(System.in);//kullanıcıdan input almak için canner obj create ettik.
+        Scanner scan = new Scanner(System.in);//kullanıcıdan input almak için scanner obj create ettik.
 
         System.out.println("boyunuzu cm giriniz : ");
         double boy=scan.nextDouble();
 
         System.out.println("kilonuzu  kg giriniz : ");
-        double kilo=scan.nextDouble();
+        double kilo=scan.nextDouble()/100;
 
-        double bmi=kilo/((boy/100)*(boy/100));
+        double bmi=kilo/((boy)*(boy));
         if (bmi<=20){
-            System.out.println("oldukca zayıfsınız");
+            System.out.println("vucut kitle endeksiniz :"+bmi+" "+"Oldukca Zayifsiniz");
         } else if (bmi>20 & bmi<=25){
-            System.out.println("normal sınırlardasınz");
+            System.out.println("vucut kitle endeksiniz :"+bmi+" "+"Normalsınız");
         } else if (bmi>25 & bmi<=30){
-            System.out.println("Sisman kategorisindesiniz");
+            System.out.println("vucut kitle endeksiniz :"+bmi+" "+"Sismansınız");
         } else if (bmi>30){
-            System.out.println("Obez grubundasiniz.");
+            System.out.println("vucut kitle endeksiniz :"+bmi+" "+"Obezsiniz");
         }
     }
 

@@ -21,6 +21,29 @@ public class Q13 {
         Bu bir dik üçgendir
      */
 
+        Scanner scanner = new Scanner(System.in);
 
+        int a;
+        int b;
+        int c;
+
+        System.out.print("Birinci sayıyı giriniz: ");
+        a = scanner.nextInt();
+
+        System.out.print("İkinci sayıyı giriniz: ");
+        b = scanner.nextInt();
+
+        System.out.print("Üçüncü sayıyı giriniz: ");
+        c = scanner.nextInt();
+
+        if ((a * a) + (b * b) == c * c) {
+            System.out.println("Bu bir dik üçgendir.");
+        } else if ((a * a) + (c * c) == b * b) {
+            System.out.println("Bu bir dik üçgendir.");
+        } else if ((b * b) + (c * c) == a * a) {
+            System.out.println("Bu bir dik üçgendir.");
+        } else {
+            System.out.println("Bu üçgen bir dik üçgen değildir.");
+        }
     }
 }
