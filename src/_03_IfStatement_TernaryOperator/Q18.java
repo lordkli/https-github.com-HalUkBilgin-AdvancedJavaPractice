@@ -36,5 +36,46 @@ public class Q18 {
                                                                      30 'dan düşük ise FF            gelmeli.
          */
 
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("vize notunu giriniz : ");
+        double vize = scan.nextDouble();
+
+        System.out.print("Vize sınavı için hesaplama yüzdesini giriniz : ");
+        double vizeOran = scan.nextDouble() / 100;
+
+        System.out.print("final notunu giriniz : ");
+        double fnal = scan.nextDouble();
+
+        System.out.print("final sınavı için hesaplama yüzdesini giriniz : ");
+        double finalOran = 1-vizeOran;
+
+        double gecmeNotu = (vize * vizeOran) + (fnal * finalOran);
+
+        System.out.println("gecme notunuz : " + gecmeNotu);
+        if (vize < 0 || fnal < 0) {//- deger girme kontrolu yapıldı
+            System.out.println("bos kagıt versen 0 alırdın neyin kafası sana - not aldırdı  :(");
+        } else {
+
+            if (gecmeNotu >= 90) {
+                System.out.println("agam tebrikler kim copy verdiyse gayet bşarılı AA");
+            } else if (gecmeNotu < 90 && gecmeNotu >= 80) {
+                System.out.println("gayet basarılı BA ");
+            } else if (gecmeNotu < 80 && gecmeNotu >= 70) {
+                System.out.println("gayet basarılı BB ");
+            } else if (gecmeNotu < 70 && gecmeNotu >= 60) {
+                System.out.println("gayet basarılı CB ");
+            } else if (gecmeNotu < 60 && gecmeNotu >= 50) {
+                System.out.println("gayet basarılı CC ");
+            } else if (gecmeNotu < 50 && gecmeNotu >= 40) {
+                System.out.println("gayet basarılı DC ");
+            } else if (gecmeNotu < 40 && gecmeNotu >= 30) {
+                System.out.println("gayet basarılı DD ");
+            } else System.out.println("agam maalesef çoook BASARISIZ hiç mi copy veren olmadı çaktın  :(");
+
+
+        }
+
     }
 }
