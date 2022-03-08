@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class Q04 {
     public static void main(String[] args) {
 
-        // Bugüne göre 100 gün sonra hangi gün olduğunuz yazdırınız.
-        // pazartesi
+        // Kullanıcının yasadıgı güne  göre 100 gün sonra hangi gün olduğunuz yazdırınız.
+        // pazartesi hafta başlangıcı
 
 
     }

@@ -38,7 +38,7 @@ public class Q18 {
 
 
         Scanner scan = new Scanner(System.in);
-
+        System.out.println("********NOT HESAPLAMA SİSTEMİ********\n");
         System.out.print("vize notunu giriniz : ");
         double vize = scan.nextDouble();
 
@@ -47,9 +47,9 @@ public class Q18 {
 
         System.out.print("final notunu giriniz : ");
         double fnal = scan.nextDouble();
-
         System.out.print("final sınavı için hesaplama yüzdesini giriniz : ");
-        double finalOran = 1-vizeOran;
+        double finalOran = scan.nextDouble()/100;
+        System.out.println("*************************************");
 
         double gecmeNotu = (vize * vizeOran) + (fnal * finalOran);
 
@@ -61,17 +61,17 @@ public class Q18 {
             if (gecmeNotu >= 90) {
                 System.out.println("agam tebrikler kim copy verdiyse gayet bşarılı AA");
             } else if (gecmeNotu < 90 && gecmeNotu >= 80) {
-                System.out.println("gayet basarılı BA ");
+                System.out.println("çoookkk basarılı BA ");
             } else if (gecmeNotu < 80 && gecmeNotu >= 70) {
                 System.out.println("gayet basarılı BB ");
             } else if (gecmeNotu < 70 && gecmeNotu >= 60) {
-                System.out.println("gayet basarılı CB ");
+                System.out.println(" basarılı CB ");
             } else if (gecmeNotu < 60 && gecmeNotu >= 50) {
-                System.out.println("gayet basarılı CC ");
+                System.out.println("hacı 50 nryinr yetmiyor CC ");
             } else if (gecmeNotu < 50 && gecmeNotu >= 40) {
-                System.out.println("gayet basarılı DC ");
+                System.out.println("ha gayret DC ");
             } else if (gecmeNotu < 40 && gecmeNotu >= 30) {
-                System.out.println("gayet basarılı DD ");
+                System.out.println("ucuz yırtın DD ");
             } else System.out.println("agam maalesef çoook BASARISIZ hiç mi copy veren olmadı çaktın  :(");
 
 

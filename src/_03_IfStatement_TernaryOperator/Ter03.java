@@ -15,7 +15,20 @@ public class Ter03 {
         System.out.print("pozitif bir sayi giriniz : ");
         int sayi = scan.nextInt();
 
-        String sonuc=(sayi>99 && sayi<1000)?("3 basamaklı sayi"):(sayi%2==0 ?"3 basamaklı olmayan çift sayı":"3 basamaklı olmayan tek sayı ");
+        System.out.println("*****  TERNARY çözümü  *****");
+
+        String sonuc = (sayi > 99 && sayi < 1000) ? ("3 basamaklı sayi") : (sayi % 2 == 0 ? "3 basamaklı olmayan çift sayı" : "3 basamaklı olmayan tek sayı ");
         System.out.println(sonuc);
+        System.out.println("*****  if  çözümü  *****");
+        if (sayi < 1000 && sayi > 99) {
+            System.out.println("3 basamaklı");
+
+        } else if (sayi % 2 == 0) {
+            System.out.println("3 basamaklı olmayan çift sayı");
+
+        } else System.out.println("3 basamaklı olmayan tek sayı");
+//   ActionDataType veriable=(şart) ? trueAction:falseAction;
+
+
     }
 }
