@@ -15,6 +15,25 @@ public class Q08 {
          * input = el
          * output = el
          */
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Lutfen bir string giriniz :");
+        String str = scan.next();
 
+        if (str.length() >= 3) {
+            System.out.println(str.substring(str.length() - 2) + str.substring(str.length() - 2) + str.substring(str.length() - 2));
+        } else {
+            System.out.println(str);
+        }
+
+        /*
+         * String b = str.substring(1);
+        String c = str.substring(str.length()-2);
+
+        System.out.println(b);
+        System.out.println(c);
+
+        String a = str.substring(2);
+         *
+         */
     }
 }

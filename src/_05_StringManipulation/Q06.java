@@ -10,6 +10,14 @@ public class Q06 {
         örneğin: johnbrown@hotmail.com ==> johnbrown@gmail.com
         */
 
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Lutfen bir email giriniz");
+        String email = scan.next();
+
+        if(email.contains("hotmail")){
+            email = email.replace("hotmail", "gmail");
+        }
+        System.out.println(email);
 
     }
 }

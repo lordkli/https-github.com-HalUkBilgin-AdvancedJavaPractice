@@ -25,7 +25,7 @@ public class A_StringMethods {
         System.out.println("----------");
 
         /** lastIndexOf()
-         *  String içinde aranan karakter(ler)in sondan itibaren ilk indexini varır
+         *  String içinde aranan karakter(ler)in sondan itibaren ilk indexini verır
          *  indexOf un sondan olan hali fakat index numaraları değişmez.
          */
 
