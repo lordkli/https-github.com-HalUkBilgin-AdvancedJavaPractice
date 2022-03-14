@@ -14,8 +14,9 @@ public class Q11 {
    ATM app. method create ediniz
    */
         System.out.println("    ****    ");
-        System.out.println("    ATM'ye hos geldiniz  :-)    ");
-        System.out.println("Bakiye sorgulama : 1\nPara cekme : 2\nPara yatırma : 3\ncıkıs : 4 ");
+        System.out.println("ATM'ye hos geldiniz  :-)    ");
+        System.out.println("    ****    ");
+        System.out.println("MÖNÜÜÜ :-) \nBakiye sorgulama : 1\nPara cekme : 2\nPara yatırma : 3\nÇıkıs : 4 ");
         secim();
     }
     private static void secim() {

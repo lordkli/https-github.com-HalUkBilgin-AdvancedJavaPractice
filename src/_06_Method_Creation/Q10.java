@@ -18,6 +18,32 @@ public class Q10 {
 
      */
 
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Sayı giriniz: ");
+        int num = scanner.nextInt();
+
+        System.out.println(powerOfThree(num));
+
+
+    }
+
+    public static boolean powerOfThree(int num) {
+
+        boolean b = false;
+        int carpim = 1;
+
+        for (int i = 1; i < num / 3; i++) { //num/3 olamdan direk num da yazılabilir
+            carpim *= 3;
+
+            if (carpim == num) {
+                b = true;
+                break;
+            }
+        }
+        return b;
+    }
 
 
 }
