@@ -16,7 +16,14 @@ public class Q09 {
         // Yuarıdaki çarpım tablosunu 10 a kadar ekrana yazdırınız.
 
 
+        for(int carpan1=1;carpan1<=10;carpan1++)
+        {
 
+            for(int carpan2=1;carpan2<=10;carpan2++)
+                System.out.println(carpan1+" x "+carpan2+" = "+ (carpan1*carpan2));
+
+            System.out.println();
+        }
 
     }
 }

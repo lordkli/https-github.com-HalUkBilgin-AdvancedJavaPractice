@@ -18,7 +18,15 @@ public class Q01 {
         26
         13       */
     public static void main(String[] args) {
-
+    	int top=0;
+    	
+    	for (int i = 100; i >0; i--) {
+    		if (i%13==0) {
+    			System.out.println(i);
+				top+=i;
+			}
+			
+		}System.out.println(top);
         
     }
 }

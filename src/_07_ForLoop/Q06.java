@@ -18,5 +18,16 @@ public class Q06 {
        isterseniz boyutları klavyeden okuyup istenen boyutlara göre
        ekrana basan bir kod yazabilirsiniz.
     */
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("pozitif bir tam sayı giriniz : ");
+        int sayi = scan.nextInt();
 
+        for (int baba = 1; baba <=sayi; baba++) {//satır kontrolu
+            for (int ogul = 1; ogul <=sayi; ogul++) {//sutun kontrolu
+                System.out.print(" "+(baba*ogul));
+            }
+            System.out.println();//2 boyutlu for da iç ve dış döngü arasına satır atlaması için boş println koyulur
+        }
+    }
 }
