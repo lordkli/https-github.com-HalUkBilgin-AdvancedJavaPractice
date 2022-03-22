@@ -13,6 +13,11 @@ public class Q10 {
 
          */
 
+        String str = "GayetBasarılı";
+        str = str.replace("Gayet", "Coook ");
+        String[] arr = new String[1];
+        arr[0] = str;
+        System.out.println(Arrays.toString(arr)); //[Coook Basarılı]
 
     }
 

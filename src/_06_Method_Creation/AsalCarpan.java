@@ -4,9 +4,7 @@ import java.util.Scanner;
 
 public class AsalCarpan {
     static int bolen = 1;
-    static boolean isAsal = true;
-
-
+    static boolean isAsal = false;
     public static void main(String[] args) {
         /* TASK :
          * Pozitif bir tamsayıyı input kabul edip en büyük asal çarpanını veren bir
@@ -24,16 +22,15 @@ public class AsalCarpan {
     }
 
     private static void asalCarpan(int sayi) {
-        int asalBolen =2;
+        int asalBolen = 2;
         for (int i = 2; i < sayi; i++) {
 
             if (sayi % i == 0) {
                 bolen = i;
-                if ( asalMı(bolen)) {
+                if (asalMı(bolen)) {
                     asalBolen = bolen;
                 }//method call-> bolen sayının asal olup olmadıgını kontrol ediyor
             }
-
         }
         System.out.println("girdiginiz sayının en buyuk asal boleni : " + asalBolen);
     }
@@ -41,14 +38,11 @@ public class AsalCarpan {
     private static boolean asalMı(int bolen) {
 
         for (int i = 2; i < bolen; i++) {
-            if (bolen % i == 0) {//bolen sayısını bolen sayısına kadar tum tamsayılar boldugunde kalan 0 değilse:
-                // bu sayı kendisnden baska hiç bir sayıya tam bolunmez
-                isAsal = false;
-               break;
-            }
+            if (bolen % i != 0) {//bolen sayısını bolen sayısına kadar tum tamsayılar boldugunde kalan 0 ise:
+                isAsal = true;
+            } else isAsal=false;
+            break;
         }
         return isAsal;
     }
-
-
 }
