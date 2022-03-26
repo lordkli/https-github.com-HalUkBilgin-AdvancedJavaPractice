@@ -55,9 +55,15 @@ public class printEvenNumbers {
         //  code Start here don't change before this line
         // kodu burdan başlatın ve bu satırdan önceki kodları değiştirmeyin
 
+//        for (int i = 0; i <=maxNum ; i+=2) {
+//            System.out.print(i);
+//        }
 
-
-
+        for (int i = 0; i <=maxNum ; i++) {
+            if(i%2==0){
+                System.out.println(i);
+            }
+        }
     }
 
 }

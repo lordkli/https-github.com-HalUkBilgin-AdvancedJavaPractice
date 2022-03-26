@@ -25,6 +25,10 @@ public class totalLetterCountCheck {
 
         //  code Start here don't change before this line
         // kodu burdan başlatın ve bu satırdan önceki kodları değiştirmeyin
-
+        if(word.length()%2==1){
+            System.out.println(true);
+        }else{
+            System.out.println(false);
+        }
     }
 }

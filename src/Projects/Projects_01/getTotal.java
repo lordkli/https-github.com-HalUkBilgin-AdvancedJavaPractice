@@ -23,25 +23,25 @@ public class getTotal {
      */
 
 
-    /*
-    3 tane pozitif String verildiğinde
-    sayısal olmayan tüm karakterleri kaldırın.
-    Stringleri int e çevirin
-    ve total print edin
+     /*
+     3 tane pozitif String verildiğinde
+     sayısal olmayan tüm karakterleri kaldırın.
+     Stringleri int e çevirin
+     ve total print edin
 
-        Ornek:
-       String num1 = "$15";
-       String num2 = "$20";
-       String num3 = "$30";
-       output ----> 65; olmali
+         Ornek:
+        String num1 = "$15";
+        String num2 = "$20";
+        String num3 = "$30";
+        output ----> 65; olmali
 
-       NOT : Eğer output 0 dan küçük ise outputu -1 e cevir
-
-
+        NOT : Eğer output 0 dan küçük ise outputu -1 e cevir
 
 
 
-   */
+
+
+    */
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -63,8 +63,26 @@ public class getTotal {
         // String num1,num2,num3 kullanın
 
 
+
+
+
+
+        int i1=Integer.parseInt(num1.replaceAll("[$A-Za-z]", ""));
+        int i2=Integer.parseInt(num2.replaceAll("[$A-Za-z]", ""));
+        int i3=Integer.parseInt(num3.replaceAll("[$A-Za-z]", ""));
+        int total=i1+i2+i3;
+
+        if(total>=0) {
+            System.out.println(total);
+        }
+
+
+else{
+           System.out.println(-1);
+       }
+
+        }
+
+
     }
-
-
-}
 

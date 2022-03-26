@@ -44,6 +44,8 @@ public class RandomNumberBetweenTwoNumbers {
         //  code Start here don't change before this line
        // kodu burdan başlatın ve bu satırdan önceki kodlari değiştirmeyin
 
+        int randomInRange=min+(int)(Math.random()*((max-min)+1));
+        System.out.println(randomInRange);
 
 
     }

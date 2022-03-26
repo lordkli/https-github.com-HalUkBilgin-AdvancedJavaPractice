@@ -30,7 +30,7 @@ public class perfectSquare {
     /*
     Pozitif bir int  num verildiğinde, return edildiği zaman num tamkare ise true veren değilse false veren bir foksiyon yazın.
 
- Not: sqrt gibi MATH class method  kullanmayın.
+ Not: sqrt gibi fonksiyonları  kullanmayın.
 
         Example 1:
         Input: 16
@@ -59,8 +59,18 @@ public class perfectSquare {
         //  code Start here don't change before this line
         // kodu burdan başlatın ve bu satırdan önceki kodları değiştirmeyin
 
+        int x = 0;
+		for (int i = 0; i <= input / 2 + 1; i++) {
 
-
+			if (input == i * i) {
+				x = 1;
+			}
+		}
+		if (x == 1) {
+			System.out.println("true");
+		} else {
+			System.out.println("false");
+		}
     }
 
 }

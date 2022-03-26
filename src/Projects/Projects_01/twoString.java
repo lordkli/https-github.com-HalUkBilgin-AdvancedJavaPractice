@@ -27,7 +27,7 @@ public class twoString {
          */
         Scanner dp = new Scanner(System.in);
 
-        String allElements = dp.nextLine();
+        String  allElements = dp.nextLine();
 
         String[] elements = allElements.split(" ");
 
@@ -38,6 +38,14 @@ public class twoString {
         // code start here use s1 and s2 as words
         // kodu burdan başlatın ve s1 ve s2 kelime olarak kullanın
 
+
+
+        if(s1.substring(s1.length()-1).equals(s2.substring(0,1))){
+            String s3=s1.replace(s1.substring(s1.length()-1),"");
+            System.out.println(s3+s2);
+        }else{
+            System.out.println(s1+s2);
+        }
 
     }
 }
