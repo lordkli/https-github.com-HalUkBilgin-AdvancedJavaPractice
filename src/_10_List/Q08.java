@@ -16,7 +16,15 @@ public class Q08 {
          * INPUT : String[] isimler={"Umit","Emin","Kemal","Kerem","Taylan","Orhan","Sinan","Furkan","Ahmet","Ali"};
          * OUTPUT : String[] isimler={"Umit","Emin","Furkan","Kerem","Taylan","Orhan","Sinan","Kemal","Ahmet","Ali"};
          */
+        List<String> list = new ArrayList<>(Arrays.asList("Umit", "Emin", "Kemal", "Kerem", "Taylan", "Orhan", "Sinan", "Furkan", "Ahmet", "Ali"));
+        System.out.println("ilk hali : " + list);
+        String eleman3 = list.get(2);
+        String eleman8 = list.get(7);
 
+        list.set(2, eleman8);
+        list.set(7, eleman3);
+
+        System.out.println("3. ve 8. eleman yer degismis hali : " + list);
 
     }
 

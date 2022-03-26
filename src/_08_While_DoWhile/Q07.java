@@ -10,6 +10,18 @@ public class Q07 {
         ve x girildiğinde ise "Program bitti" yazan programı yazınız.
 
        */
+        Scanner scan = new Scanner(System.in);
+        String str = "";
+
+
+        do {
+            str = scan.nextLine();
+            if (str.equalsIgnoreCase("x")) break; // break : döngü kırıyor
+
+            System.out.println("Program çalışıyor");
+        } while (!str.equalsIgnoreCase("x"));
+
+        System.out.println("Program bitti.");
 
     }
 }

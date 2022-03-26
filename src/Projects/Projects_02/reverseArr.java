@@ -42,22 +42,10 @@ ters arrayi yazdır
         String[] useThisArray = myStr.split(" ");
 
      //        code start here
-
      //        Koda burdan başlayın
 
 
-        String[] reversed = new String[useThisArray.length];
 
-        int counter = 0 ;
-
-        for(int i = useThisArray.length-1 ; i >=0 ; i--){
-
-            reversed[counter++] = useThisArray[i];
-
-        }
-
-
-        System.out.println(Arrays.toString(reversed));
     }
 
 }

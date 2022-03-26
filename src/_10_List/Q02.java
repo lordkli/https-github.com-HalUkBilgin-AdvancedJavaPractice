@@ -1,6 +1,7 @@
 package _10_List;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -15,5 +16,22 @@ public class Q02 {
 
          */
 
+        String isim[][] = {{"Ali", "Veli", "Ayse"}, {"Hasan", "Can"}, {"Suzan"}};
+        yeniList(isim);
     }
+
+    public static void yeniList(String[][] isim) {
+        List<String> list1 = new ArrayList<>();
+
+        for (int kat = 0; kat < isim.length; kat++) {//kat kontrolu
+            for (int daire = 0; daire < isim[kat].length; daire++) {//dire kontrolu
+                list1.add(isim[kat][daire]);//girilen karin dairesi list  eklendi
+            }
+
+        }
+        System.out.println("ilk liste :" + list1);
+        Collections.sort(list1);
+        System.out.println("siralamadan sonraki liste :" + list1);
+    }
+
 }

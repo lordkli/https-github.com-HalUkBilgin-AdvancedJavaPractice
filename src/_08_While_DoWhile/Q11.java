@@ -29,6 +29,21 @@ public class Q11 {
     public static void main(String[] args) {
 
 
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("bir sayı giriniz");
+        int sayi = scanner.nextInt();
+
+        int count = 0;
+        boolean a = false;
+
+        while (count * count <= sayi) {
+            if (count * count == sayi) {
+                System.out.println("true");
+                a = true;
+            }
+            count++;
+        }
+        if (a == false) System.out.println("false");
 
     }
 }

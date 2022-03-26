@@ -49,29 +49,7 @@ public class diffBetweenMaxMin {
 
     // Your code start here. Don't remove or change anything before this line. Your array is -> useThisArray in line 27
     // Kodlamaya burdan başla.Bu satırdan önceki satırlarda hiçbirşeyi kaldırma ve degiştirme. Kullanacağın array 27.ci satırda  --> useThisArray
-        int min = Integer.MAX_VALUE;
 
-        for( int i = 0 ; i < useThisArray.length ; i++){
-
-            if(useThisArray[i] < min){
-                min = useThisArray[i];
-            }
-
-        }
-
-
-
-        int max = 0 ;
-        for( int i = 0 ; i < useThisArray.length ; i++){
-
-            if(useThisArray[i] > max){
-                max = useThisArray[i];
-            }
-
-        }
-
-        int result = max - min;
-        System.out.println(result);
 
     }
 

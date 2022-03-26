@@ -49,20 +49,11 @@ public class Common2Arrays {
         Don't change or delete anything before this line
 
 
-        // Bu satırdan önceki satırlarda hicbirşeyi silme ve degiştirme
-        // koda burdan basla
-        // array1 and array2  kullan
-
-
+        Bu satırdan önceki satırlarda hicbirşeyi silme ve degiştirme
+        koda burdan basla
+        array1 and array2  kullan
 
  */
-        if(array1[array1.length-1] == array2[array2.length-1]){
-            System.out.println("true");
-        }else
-            System.out.println("false");
-
-
-
 
 
     }
