@@ -1,1 +1,0 @@
-Konsolda görmek istediğimiz çıktıyı main methodda kendimiz eklemekteyiz.  

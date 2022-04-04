@@ -7,7 +7,7 @@ Methods : Course() , addTeacher() , printTeacher()
 
 ----------Teacher Class Özellikleri :
 
-fields : name,mpno,branch
+fields : name,branch
 Methods : Teacher()
 
 ----------Student Class Özellikleri :
