@@ -26,12 +26,20 @@ public class maxNumber {
 
     public static void main(String[] args) {
 
-     /*
-        Bu satırdan önceki satırlarda hicbirşeyi silme ve degiştirme
-        koda burdan basla
-        array1 and array2  kullan
+        int[][] i1 = new int[][]{{1,2,3}, {2,3,1} , {5,5,5} , {2,10,3}};
 
-      */
+        int max = 0 ;
+        for( int i = 0 ; i < i1.length ; i++){
+            for(int j =0 ; j< i1[i].length ; j++){
+
+                if(i1[i][j] > max){
+                    max = i1[i][j];
+                }
+            }
+
+        }
+
+        System.out.println(max);
 
     }
 

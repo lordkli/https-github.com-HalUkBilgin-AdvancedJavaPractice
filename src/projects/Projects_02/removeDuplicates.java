@@ -1,5 +1,6 @@
 package projects.Projects_02;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class removeDuplicates {
@@ -52,7 +53,7 @@ public class removeDuplicates {
 
         int[] useThisArray = new int[arr.length];
 
-        for (int i = 0; i < useThisArray.length; i++) {
+        for(int i = 0 ; i < useThisArray.length ; i++){
 
             int num = Integer.parseInt(arr[i]);
 
@@ -64,9 +65,20 @@ public class removeDuplicates {
 //        dont change anything before this line
 //        your Array is useThisLine
 
-        // Kodlamaya burdan başla.bu satırdan önceki satirlarda hicbirşeyi  degiştirme.
-        //   useThisLine arrayini kullan
+      // Kodlamaya burdan başla.bu satırdan önceki satirlarda hicbirşeyi  degiştirme.
+      //   useThisLine arrayini kullan
+       int n=useThisArray.length;
+        int[]temp=new int[n];
+        int j=0;
+        for (int i = 0; i <n-1 ; i++) {
+            if(useThisArray[i]!=useThisArray[i+1]){
+                temp[j++]=useThisArray[i];
+            }
 
-
+        }
+        temp[j++]=useThisArray[n-1];
+        System.out.println(Arrays.toString(temp));
     }
+
+
 }

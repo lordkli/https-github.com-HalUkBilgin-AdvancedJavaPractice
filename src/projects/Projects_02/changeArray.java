@@ -1,5 +1,6 @@
 package projects.Projects_02;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class changeArray {
@@ -42,7 +43,16 @@ public class changeArray {
 //        kullanman gereken -> UseThisArray
 
 
+        for(int i = 0 ; i<UseThisArray.length ; i++){
 
+            if(UseThisArray[i].equals("Orange")){
+                UseThisArray[i] = "Apple";
+
+            }
+
+        }
+
+        System.out.println(Arrays.toString(UseThisArray));
 
     }
 }
