@@ -1,6 +1,4 @@
-package _13_stringBuilder;
-
-import java.util.Scanner;
+package _13_StringBuilder;
 
 public class Q01 {
     public static void main(String[] args) {
