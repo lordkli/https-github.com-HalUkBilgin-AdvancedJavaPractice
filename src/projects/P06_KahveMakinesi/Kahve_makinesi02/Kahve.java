@@ -1,4 +1,4 @@
-package projects.P06_KahveMakinesi.Kahve_mqkinesi01;
+package projects.P06_KahveMakinesi.Kahve_makinesi02;
 
 public class Kahve {
     private String kahveNo;

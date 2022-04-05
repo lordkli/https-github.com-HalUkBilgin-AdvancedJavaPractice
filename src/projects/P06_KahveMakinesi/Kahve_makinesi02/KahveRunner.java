@@ -1,4 +1,4 @@
-package projects.P06_KahveMakinesi.Kahve_mqkinesi01;
+package projects.P06_KahveMakinesi.Kahve_makinesi02;
 
 public class KahveRunner {
     public static void main(String[] args) {
