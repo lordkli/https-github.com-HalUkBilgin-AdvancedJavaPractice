@@ -1,4 +1,4 @@
-package projects.P02_javaBankATM;
+package projects.P02_javaBankATM.JavaBankATM01;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

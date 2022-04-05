@@ -1,4 +1,4 @@
-package tasks;
+package projects.P06_KahveMakinesi;
 
 import java.util.Scanner;
 
@@ -82,11 +82,7 @@ public class T05_KahveMakinesi {
 
        Ancak arkadaşlarınızla beraber Voice Channel larda ödev üzerine tartışabilirsiniz.
 
-       HERKESE KOLAY GELSİN !! :)
-
-
-
-
+       HERKESE KOLAY GELSİN !!
                  */
 
 
