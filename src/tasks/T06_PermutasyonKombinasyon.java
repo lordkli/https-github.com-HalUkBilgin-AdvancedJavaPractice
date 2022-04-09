@@ -38,13 +38,17 @@ public class T06_PermutasyonKombinasyon {
         }
     }
 
-    public static long faktoriyel(long number) {
-        long fakSonuc = 1;
-        for (int i = 1; i <= number; i++) {
-            fakSonuc *= i;
-        }
-        return fakSonuc;
-    }
+  // public static long faktoriyel(long number) {
+  //     long fakSonuc = 1;
+  //     for (int i = 1; i <= number; i++) {
+  //         fakSonuc *= i;
+  //     }
+  //     return fakSonuc;
+  // }
+  private static long faktoriyel(long sayi) {//Ahan da TRIC köşesinde bugun:  ozyinelemeli metodlar ===Recursive Mothods
+      if (sayi <= 0)  return 1 ;
+      return sayi * faktoriyel(sayi - 1);
+  }
 
     public static long kombinasyon(long n, long r) {
         if (n > 0 && r > 0 && n >= r) {

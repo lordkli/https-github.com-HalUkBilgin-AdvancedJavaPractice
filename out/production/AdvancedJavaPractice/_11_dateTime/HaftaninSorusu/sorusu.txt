@@ -3,20 +3,20 @@
      ekleyen ve sonrasında her dakikanın ilk 10 saniyesinde kaydolanları
      şanslı kullanıcı olarak ekrana yazdıran bir uygulamadır.
      Bunun için;
-     1- Bir user class oluşturun fields: name , registerDate (LocalDateTime cinsinden)
-     2- Registration isminde bir class oluşturun ve register isminde bir metod
+     1- Bir user(Kullanıcı) class oluşturun fields: name , registerDate(kayıtZamanı) (LocalDateTime cinsinden)
+     2- Registration(Kayıt) isminde bir class oluşturun ve register()(kayıtAl()) isminde bir metod
      ekleyerek Kullanıcıdan user ismini alarak ArrayList e ekleyin ve bu list i
      return edin.
-     3- Registration classı na aynı zamanda kendine verilen
-     ArrayListteki userlardan her dakikanın ilk 10  saniyesinde kaydolanları
-     yazdıran printHappyUsers isminde bir metod daha ekleyiniz.
+     3- Registration(Kayıt) classı na aynı zamanda kendine verilen
+     ArrayListteki userlardan(kullanıcı) her dakikanın ilk 10  saniyesinde kaydolanları
+     yazdıran printHappyUsers(sanslıKullanıcı) isminde bir metod daha ekleyiniz.
 
      İpucu Çalışacak main metodu aşağıdaki gibi olmalıdır.
 
      public static void main(String[] args) {
-     Registration userReg = new Registration();
-     ArrayList<User> register = userReg.register();
-      userReg.printHappyUsers(register);
+     Kayıt yeniKayıt = new Kayıt();
+     ArrayList<Kullanıcı> kisi = yeniKayıt.kayıtAl();
+      yeniKayıt.sanslıKullanıcı(kullaınıcı);
      }
 
 
