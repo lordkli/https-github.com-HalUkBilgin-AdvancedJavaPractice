@@ -134,7 +134,7 @@ public class Kitapcı_KitapEkle {
 	
 			System.out.println("Başka Kitap Sorgulamak İster Misiniz? e/h");
 			String isFinish = scan.next();
-			String a = scan.nextLine(); // DUMMY KUKLA NEXT()'TEN KURTULMAK İÇİN
+			 scan.nextLine(); // DUMMY KUKLA NEXT()'TEN KURTULMAK İÇİN
 
 			if (isFinish.equalsIgnoreCase("h")) {
 				break;
