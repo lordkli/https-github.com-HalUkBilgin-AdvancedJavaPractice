@@ -45,7 +45,7 @@ public class T06_PermutasyonKombinasyon {
   //     }
   //     return fakSonuc;
   // }
-  private static long faktoriyel(long sayi) {//Ahan da TRIC köşesinde bugun:  ozyinelemeli metodlar ===Recursive Mothods
+  private static long faktoriyel(long sayi) {//Ahan da TRICK köşesinde böyün:  ozyinelemeli metodlar ===Recursive Mothods
       if (sayi <= 0)  return 1 ;
       return sayi * faktoriyel(sayi - 1);
   }

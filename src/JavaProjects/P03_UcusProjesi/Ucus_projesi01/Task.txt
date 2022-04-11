@@ -1,0 +1,9 @@
+Uçuş Projesi;
+1- Constructor kullanarak yolcu üretiyoruz, yolcu bilgilerini scanner ile değil,
+    constructor'dan gelen encapsulated bilgilerle elde ediyoruz,
+2- method class'ından ucus() methodunu çağırıp,  içerisinde kullanacğımız değerleri getter method ile ekliyoruz.
+3- bilet yazdırmadan hemen önce, indirimden faydalanmışsan onu belirten bir dinamik sout gönderiyor.
+    faydalanmamışsan indirimsiz yolcu + ödenecek tutar yazdırıyor
+4- bilet yazdırırken Flight No ve Gate Number dinamik olarak oluşturulmuştur.
+    flight no oluşturma şekli: bulduğumuz seneyi alıyor2022 + bulunduumuz saati alıyor concat edip yazdırıyor .
+     Gate number oluşturma şekli:  gidilecek şehir ismi + mathrandom(10)

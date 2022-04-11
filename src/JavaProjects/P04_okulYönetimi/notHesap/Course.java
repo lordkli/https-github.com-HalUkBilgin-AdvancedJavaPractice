@@ -1,8 +1,8 @@
-package JavaProjects.P04_OkulYönetimi;
+package JavaProjects.P04_okulYönetimi.notHesap;
 
 public class Course {
 
-    JavaProjects.P04_OkulYönetimi.Teacher teacher;
+    Teacher teacher;
     String name;
     String prefix;
     int noteYazili;
