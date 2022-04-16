@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Islemler {
 
     static List<Kisi> ogrncListesi = new ArrayList<>();
-    static ArrayList<Kisi> ogrtmListesi = new ArrayList<>();
+    static ArrayList<Kisi> ogrtListesi = new ArrayList<>();
     static Scanner scan = new Scanner(System.in);
     static String kisiTuru;
 
@@ -63,12 +63,16 @@ public class Islemler {
                 islemMenusu();
                 break;
             case 2:
+                arama();
                 islemMenusu();
                 break;
             case 3:
+                listele();
                 islemMenusu();
                 break;
             case 4:
+                sil();
+
                 islemMenusu();
                 break;
             case 0:
@@ -80,6 +84,99 @@ public class Islemler {
 
                 break;
         }
+
+    }
+
+    private static void sil() {
+
+        System.out.println("   ***   " + kisiTuru + " silme sayfası   ***");
+
+        boolean flag = true;
+
+        if (kisiTuru.equalsIgnoreCase("OGRENCI")){//ogrenci arıyorsa if
+            scan.nextLine();//dummy
+            System.out.println();//bos satır print
+            System.out.print("silinecek ogrenci kimlik no giriniz : ");
+
+            String silinecekKimlikNo=scan.next();
+
+            for (Kisi k:ogrncListesi) {
+                if (k.getKimlikNo().equals(silinecekKimlikNo)){//flag havada
+                    System.out.println("silinen ogrenci : "+k.getAdSoyad());
+                    ogrncListesi.remove(k);//ogrsc silindi
+                    flag=false;
+                    break;
+                }
+
+            }if (flag){//flag inince
+                System.out.println("silinecek ogrenci mevcut değil ");
+            }
+        }else{//ogretmen aranıyor
+            System.out.print("silinecek ogretmenin kimlik no giriniz : ");
+            String silinecekOgrtKimlikNo=scan.next();
+            for (Kisi k: ogrtListesi) {
+                if (k.getKimlikNo().equalsIgnoreCase(silinecekOgrtKimlikNo)){//flag havada
+                    System.out.println("silinen ogretmen : "+k.getAdSoyad());
+                    ogrtListesi.remove(k);
+                    flag=false;
+                    break;
+                }
+
+            }if (flag){//flag inince
+                System.out.println("silnecek ogretmen mevcut değil ");
+            }
+        }
+
+    }
+
+    private static void listele() {
+
+        System.out.println("   ***   " + kisiTuru + " listeleme sayfası   ***");
+        if (kisiTuru.equalsIgnoreCase("OGRENCI")){//ogrenci listeleme if
+            System.out.println(ogrncListesi);
+        }else {//ogretmen listeleniyor
+            for (Kisi k: ogrtListesi) {
+                System.out.println(k.toString()+" adı soyadı : "+k.getAdSoyad()+k.getYas());
+
+            }
+        }
+    }
+
+    private static void arama() {
+        System.out.println("   ***   " + kisiTuru + " arama sayfası   ***");
+
+        boolean flag = true;
+
+        if (kisiTuru.equalsIgnoreCase("OGRENCI")){//ogrenci arıyorsa if
+            scan.nextLine();//dummy
+            System.out.println();//bos satır print
+            System.out.print("aradıgınız ogrenci kimlik no giriniz : ");
+
+            String arananKimlikNo=scan.next();
+
+            for (Kisi k:ogrncListesi) {
+                if (k.getKimlikNo().equals(arananKimlikNo)){//flag havada
+                    System.out.println("aradıgınız ogrenci : "+k.getAdSoyad());
+                    flag=false;
+                }
+
+            }if (flag){//flag inince
+                System.out.println("aradıgınız ogrenci mevcut değil ");
+            }
+        }else{//ogretmen aranıyor
+            System.out.print("aradıgınız ogretmenin kimlik no giriniz : ");
+            String arananKimlikNo=scan.next();
+            for (Kisi k: ogrtListesi) {
+                if (k.getKimlikNo().equalsIgnoreCase(arananKimlikNo)){//flag havada
+                    System.out.println("aradıgınız ogretmen : "+k.getAdSoyad());
+                    flag=false;
+                }
+
+            }if (flag){//flag inince
+                System.out.println("aradıgınız ogretmen mevcut değil ");
+            }
+        }
+
 
     }
 
@@ -96,18 +193,19 @@ public class Islemler {
 
             System.out.print("ogrenci No giriniz : ");
             String ogrcNo = scan.next();
-            scan.nextLine();//dummy hayalet komut
+            scan.nextLine();//dummy --> hayalet komut
             System.out.print("sınıf giriniz : ");
             String sınıf = scan.next();
             Ogrenci sefilOgrenci = new Ogrenci(adSoyad, kimlikNo, yas, ogrcNo, sınıf);//p'li cons ogrc obj create edildi
             ogrncListesi.add(sefilOgrenci);
-        } else {
+        } else {//kisiTuru öğrenci ise if çalısir değilse kisiTuru öğretmen demektir ki else body çalışır
             System.out.print("sicil No giriniz : ");
             String sicilNo = scan.nextLine();
+            scan.nextLine();//dummy
             System.out.print("bolum giriniz : ");
             String bolum = scan.nextLine();
             Ogretmen muhtesemOgretmen = new Ogretmen(adSoyad, kimlikNo, yas, sicilNo, bolum);//p'li cons ogrtm obj create edildi
-            ogrtmListesi.add(muhtesemOgretmen);
+            ogrtListesi.add(muhtesemOgretmen);
         }
     }
 }

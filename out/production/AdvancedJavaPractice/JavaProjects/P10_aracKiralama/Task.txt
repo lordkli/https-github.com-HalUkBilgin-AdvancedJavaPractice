@@ -1,0 +1,35 @@
+/*
+  1- arac kiralama icin model marka yakit tipi vites ve gunluk ucret olustur  Kullanicidan aracı alacaği gün saat tarih bilgilerini ve
+     teslim edeceği gün saat tarih bilgilerini olusturun ve  bu bilgileri farkli class'ta tutun
+
+  2- kullanıcıya alıcagi gunu tarih ve saat olarak sorun (Lutfen teslim alacaginiz gunu giriniz: (Ornek: 12.04))
+     girdigi bilgileri kontrol edin alış tarihi teslim tarihinden sonra olamaz!!!! kullanici yanlis girerse tekrar sorun
+     kullanicidan aldiginiz tarihleri gun ve ay hesabi icin ayri ayri yazdirin
+     girdigi tarihler arasındaki günleri hesaplayip ekrana yazdirin
+     !!!!aracTalep() create et
+
+  3- olusturdugumuz filoda bulunan araclarin model marka yakit tipi vites ve gunluk ucretlerini girin ve olusturdugunuz liste liste atayin ;
+     !!!! (List<AracTalebi> aracTalebiList = new ArrayList<>();) olusturun
+     !!!!arabalar() create et
+
+  4- kullaniciya olusturdugunuz listenin icinde var olan arabalardan olusan bir liste konsola yazdirin
+
+     1 : Opel Dizel Otomatik
+     2 : Opel Dizel Manuel
+     3 : Opel Benzinli Otomatik ....
+
+  5- kullanicinin yaptigi secime gore aracin ozelliklerini ve kullanicidan aldigimiz tarhler arasindaki farkin gun sayisini aracin gunluk kiralama ucreti ile carpip
+     konsola toplam kullanim bedelini yazdirin
+
+  6- kullaniciya devam etmek isteyip istemedigini sorun (Devam etmek istiyorsaniz 'e' ye, istemiyorsaniz 'h' ye basin)
+     !!!!islemeDevamDongusu()create edin
+     istemiyorsa islemi tekrar arac sectirin
+
+  7- devam etmek istiyorsa kullancidan kisisel blgilerini isteyin
+     !!!!musteriBilgisi() create edin
+     odeme bilgilerini isteyin kart numarasi 12 buyuk veya kucuk olmayacak hatali giriste tekrar kart numarasi isteyin
+     !!!!odemeBilgileri() create edin
+
+  8- kart numarasinda hata yoksa "Odemeniz Basari ile Gerceklesmistir. Iyi gunler dileriz..." yazdirin
+
+*/

@@ -33,7 +33,6 @@ public class Ogrenci extends Kisi {
     }
 
 
-
     @Override
     public String toString() {
         return "Ogrenci{" +
