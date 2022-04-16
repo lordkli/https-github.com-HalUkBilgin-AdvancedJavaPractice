@@ -8,6 +8,8 @@ public class Q01 {
 	          \': prints single quote :' tek tırnak yazdırır.
 	          \": prints double quote :"" Çift tırnak yazdırır.
 
+
+
 	 */
 
 	
