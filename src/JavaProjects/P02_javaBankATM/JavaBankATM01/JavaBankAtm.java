@@ -33,7 +33,7 @@ class JavaBankAtm {
 
             System.out.println("Lutfen sifrenizi giriniz...");
             sifre = scan.nextInt();
-            scan.nextLine();
+            scan.nextLine();//dummy
             if (sifre != sifrem || kartNo.replace(" ", "").length() != 16) {
                 System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
                 System.out.println("Islem Basarisiz !");
@@ -157,7 +157,7 @@ class JavaBankAtm {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MMM/yyyy" + " HH.mm");
         lcd.format(dtf);
         System.out.println("+-------------------+\r\n"
-                + "|  " + lcd.format(dtf) + "|\r\n"
+                + "|"+lcd.format(dtf)+"|\r\n"
                 + "|                   |\r\n"
                 + "|     JAVA BANK     |\r\n"
                 + "|                   |\r\n"
