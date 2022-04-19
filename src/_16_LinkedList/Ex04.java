@@ -15,7 +15,17 @@ public class Ex04 {
 			 		Girilen isim yoksa "Bu isim LinkedList'de yok bu yuzden silinemedi" diye mesaj verin
 			 	
 			 */
+        LinkedList<String> ll1 = new LinkedList<>(Arrays.asList("haluk", "ipek", "harun", "irem"));
 
+        Scanner scan = new Scanner(System.in);
+        System.out.print("isim giriniz : ");
+
+        String isim =scan.nextLine().toLowerCase();
+        if (ll1.remove(isim)){
+            System.out.println("Bu isim LinkedList'de vardi ve silindi");
+            System.out.println("silinmiş hali ile list : "+ll1);
+
+        }else System.out.println("Bu isim LinkedList'de yok bu yuzden silinemedi");
 
     }
 }

@@ -31,7 +31,7 @@ public class LinkedList01 {
 
         System.out.println(ll1);//[erdem, mehmet, samet, said, yagmur]
 
-        ll1.add("merve");//--> add yapilan node LinkedList'im en sonuna ekler,,
+        ll1.add("merve");//--> add yapilan node LinkedList'in en sonuna ekler,,
         System.out.println(ll1);//[erdem, mehmet, samet, said, yagmur, merve]
 
         ll1.add(2,"faruk eczanesi");//--> 2. indexe node eklenir.
@@ -75,6 +75,7 @@ public class LinkedList01 {
         System.out.println(ll3);//[1, 2, 4, 5, 6]
 
        ll3.remove( ll3.indexOf(6));
+
         System.out.println(ll3);//[1, 2, 4, 5]
 
 
