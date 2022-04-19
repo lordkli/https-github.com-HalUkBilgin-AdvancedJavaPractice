@@ -91,9 +91,9 @@ public class Islemler {
 
         System.out.println("   ***   " + kisiTuru + " silme sayfası   ***");
 
-        boolean flag = true;
+        boolean flag = true;//flag bayrak olsun true->bayrak havada false->bayrak yerde
 
-        if (kisiTuru.equalsIgnoreCase("OGRENCI")){//ogrenci arıyorsa if
+        if (kisiTuru.equalsIgnoreCase("OGRENCI")){//ogrenci arıyorsa if body çalışacak
             scan.nextLine();//dummy
             System.out.println();//bos satır print
             System.out.print("silinecek ogrenci kimlik no giriniz : ");
@@ -108,10 +108,10 @@ public class Islemler {
                     break;
                 }
 
-            }if (flag){//flag inince
+            }if (flag){//flag inince calışacak block
                 System.out.println("silinecek ogrenci mevcut değil ");
             }
-        }else{//ogretmen aranıyor
+        }else{//ogretmen aranıyorsa else body calışacak
             System.out.print("silinecek ogretmenin kimlik no giriniz : ");
             String silinecekOgrtKimlikNo=scan.next();
             for (Kisi k: ogrtListesi) {
@@ -145,9 +145,10 @@ public class Islemler {
     private static void arama() {
         System.out.println("   ***   " + kisiTuru + " arama sayfası   ***");
 
-        boolean flag = true;
+        boolean flag = true;//flag bayrak olsun true->bayrak havada false->bayrak yerde
+        //AHAN Da  TRICK : flag iki farlı method'da da kullanıldıgı icin static yapmak daha clean code olur....
 
-        if (kisiTuru.equalsIgnoreCase("OGRENCI")){//ogrenci arıyorsa if
+        if (kisiTuru.equalsIgnoreCase("OGRENCI")){//ogrenci arıyorsa if body çalışacak
             scan.nextLine();//dummy
             System.out.println();//bos satır print
             System.out.print("aradıgınız ogrenci kimlik no giriniz : ");
@@ -163,7 +164,7 @@ public class Islemler {
             }if (flag){//flag inince
                 System.out.println("aradıgınız ogrenci mevcut değil ");
             }
-        }else{//ogretmen aranıyor
+        }else{//ogretmen aranıyorsa else body calışacak
             System.out.print("aradıgınız ogretmenin kimlik no giriniz : ");
             String arananKimlikNo=scan.next();
             for (Kisi k: ogrtListesi) {
@@ -193,7 +194,7 @@ public class Islemler {
 
             System.out.print("ogrenci No giriniz : ");
             String ogrcNo = scan.next();
-            scan.nextLine();//dummy --> hayalet komut
+            scan.nextLine();//dummy --> hayalet komut--> iki tane eşit scan.next(); komutu ayırmak için araya girmeli
             System.out.print("sınıf giriniz : ");
             String sınıf = scan.next();
             Ogrenci sefilOgrenci = new Ogrenci(adSoyad, kimlikNo, yas, ogrcNo, sınıf);//p'li cons ogrc obj create edildi

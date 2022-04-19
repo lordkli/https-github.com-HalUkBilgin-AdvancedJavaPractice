@@ -32,12 +32,19 @@ public class Ogrenci extends Kisi {
         return sınıf;
     }
 
-
     @Override
     public String toString() {
         return "Ogrenci{" +
                 "ogrcNo='" + ogrcNo + '\'' +
                 ", sınıf='" + sınıf + '\'' +
-                '}';
+                "} " + super.toString();
     }
+
+// @Override
+   // public String toString() {
+   //     return "Ogrenci{" +
+   //             "ogrcNo='" + ogrcNo + '\'' +
+   //             ", sınıf='" + sınıf + '\'' +
+   //             '}';
+   // }
 }
