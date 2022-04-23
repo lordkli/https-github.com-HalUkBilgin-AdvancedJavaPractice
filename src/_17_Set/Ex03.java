@@ -1,9 +1,6 @@
 package _17_Set;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class Ex03 {
     /* TASK:
@@ -18,8 +15,56 @@ public class Ex03 {
      */
 
     public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<Integer>();
 
+        elemanEkle(list);
+        System.out.println("random list = " + list);       //başka bir method'ta bile list üzerinde değişiklik yapıldığında geçerli oluyor
+        seteCevir(list);              //liste değişmeden önce set'e çevirmek için cevap sıralamasını değiştirdim (copyasını oluşturup da yapabilirdim
+        tekrarlariSill(list);           //normalde tekrarları silmek için direk set'e çevirirdim ama soruda daha sonra çevir diyor
+        System.out.println("tekrarları silinen list = " + list);
 
     }
+
+    private static void seteCevir(ArrayList<Integer> list) {
+        Set<Integer> set = new HashSet<Integer>(list);
+        System.out.println("ArrayListin Set hali = " + set);
+
+        setiListeyeCevir(set);      //oluşturduğum seti tekrardan array'a çevireceğim
+
+    }
+
+    private static void setiListeyeCevir(Set<Integer> set) {
+        ArrayList<Integer> cevrilenList = new ArrayList<Integer>(set);
+        System.out.println("Arraya cevrilen set = " + cevrilenList);
+    }
+
+    private static void tekrarlariSill(ArrayList<Integer> list) {
+
+        ArrayList<Integer> tekrarsizList = new ArrayList<>();
+        for (int i = 0; i < list.size(); i++) {
+            for (int j = i + 1; j < list.size(); j++) {
+                if (list.get(i) == list.get(j)) {
+                    list.remove(j);
+                    j--;                //aynı eleman varsa bir indexteki elemanı silecek, eleman atlamaması için "j--"
+                }
+
+            }
+
+        }
+
+    }
+
+    private static void elemanEkle(ArrayList<Integer> list) {
+
+        Random rand = new Random();
+        for (int i = 0; i < 30; i++) {
+            list.add(rand.nextInt(10));
+
+        }
+
+    }
+
+
 }
+
 

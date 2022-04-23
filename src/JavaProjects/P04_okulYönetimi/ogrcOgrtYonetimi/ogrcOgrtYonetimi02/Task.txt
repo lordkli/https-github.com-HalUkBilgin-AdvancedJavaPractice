@@ -1,0 +1,23 @@
+ ************** BU PROGRAMDA SU ISLEMLER YAPILMAKTADIR**********
+
+    ============= ISLEMLER =============
+		 1-EKLEME    ***
+		 2-ARAMA      ***
+		 3-LISTELEME   ***
+		 4-SILME        ***
+		 5-ANA MENU    ***
+		 Q-CIKIS     ***
+
+    ********************* HIKAYESI *****************************
+
+   * olasi hatalar try/catch bloklari ile kontrol edildi
+   * ekleme methodunun mimari yusuf bey anlatiyor kimlik no try/catch de baglandi
+   * yas try/catch ile kimlik no ya baglandi yas kontrol icin belli araliklar
+   * alindi yani negatif girme durumu kontrol edildi
+   * brans try/catch ile yas a baglandi
+   *
+   * sicil no harf ve rakamlardan olusmasi gerketigi icin ve        kontrol edildi
+   * nested try/catch mantigi ile ekleme methodu calisildi
+   * girilen bilgilerin hepsi dogru oldugunda olusturulan listeye eklendi
+   * arada cin seansi yapildi buyu enerji konulari LINK YOUTUBE da
+   * interface  ile to do list olusturulup Kisi class ina implement yapildi
