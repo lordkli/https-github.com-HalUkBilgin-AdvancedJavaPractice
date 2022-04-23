@@ -7,5 +7,8 @@ public interface Planning {
 
     void pSpecification(String name, String producer, String unit);
     ArrayList<Product> pList();
-    void pShelving(int id, String shelf);
+    void pShelving(int id, String shelf);//bu methoa-d su aksi
+
+
+
 }
