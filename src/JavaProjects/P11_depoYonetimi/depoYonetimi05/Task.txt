@@ -1,0 +1,72 @@
+/*
+	 * basit bir depo projesi
+	 *
+	 * Calisan bir fabrikada uygulanan bir sistem olan depo uygulamasidir.
+	 *
+	 * 1-) burada oncelikle urunun tanimlamasi  yapilir. id urunIsmi uretici miktar birim ve raf (6 adet fields mevcut)
+	 *
+	 * 2-) methodlar olusturacagiz.
+	 * 		urunTanimlama 	==>  urunun ismi, ureticisi ve birimi girilecek. id  alınacak.
+	 *
+	 * 		urunListele 	==> tanimlanan urunler listelenecek. urunun adeti ve raf numarasi tanimlama yapilmadiysa default deger gorunsun.
+	 *
+	 * 		urunGirisi 		==> giris yapmak istedigimiz urnunun id numarasi ile girecegiz.
+	 *
+	 * 		urunuRafaKoy 	==> listeden urunu sececegiz ve id numarasina gore urunu rafa koyacagiz.
+	 *
+	 *		urunCikisi 		==> listeden urunu sececegiz ve urunun cikis yapcagiz. burada urun listesinden sadece miktarda degisiklik yapilacak.
+	 *							urun adedi 0dan az olamaz. 0 olunca urun tanimlamasi silinmesin. sadece miktari 0 olsun.
+
+	 * 		===> yaptigimiz tum degisiklikler listede de gorunsun.
+	 *
+	 *
+	 * 		    id		ismi 	ureticisi	miktari		birimi		raf
+	 * 		---------------------------------------------------------------
+	 * 		or: 1000	 un 	hekimoglu	0 			cuval 		null
+	 *
+	 * 		urunGirisi		==> id:1000  urun girisi :5
+	 * 		urunListele 	==>
+	 *
+	 * 			id		ismi 	ureticisi	miktari		birimi		raf
+	 * 		---------------------------------------------------------------
+	 * 		or: 1000	 un 	hekimoglu	5 			cuval 		null
+	 *
+	 * 		urunuRafaKoy 	==> id:1000 raf : raf1
+	 * 		urunListele 	==>
+	 * 			id		ismi 	ureticisi	miktari		birimi		raf
+	 * 		---------------------------------------------------------------
+	 * 		or: 1000	 un 	hekimoglu	5 			cuval 		raf1
+	 *
+	 * 		urunCikisi 		==> id 1000: urun cikis : 3 (kalan 2 cuval un)
+	 * 		urunListele 	==>
+	 * 			id		ismi 	ureticisi	miktari		birimi		raf
+	 * 		---------------------------------------------------------------
+	 * 		or: 1000	 un 	hekimoglu	2 			cuval 		raf1
+	 *
+	 *
+	 */
+
+	 Urun POJO class oluşturuldu.
+     Getter, Setter, toString, constructor etc…
+     Variables class’ında static bir Map tanımland.
+     Map<Integer, List (Urun)>
+     Key: urunID
+     Value : Urun objelerinden oluşan List.
+     Ayrıca, scan ve random classları static olarak burada tanımlandı, tüm package’de kullanıldı.
+     Satin Alma ve Satış işlemleri için 2 ayrı Interface oluşturuldu.
+     Interface ALIS:
+     void urunGirisi();
+     void urunRafaKoy();
+     Interface SATIS:
+     void urunCikisi();
+     Main method
+     girisMenu class’ında bulunan giriş() mehodunu call ederek proje başlatıldı.
+     Switch Case, try catch, object creation, recursive method calls kullanıldı.
+     Satin Alma methodu implements Interface ALIS
+     urunGirisi: Tanımlanan urunlerden bir ID girerek urun miktarı urunlerMap’e işlendi.
+     urunRafaKoy: Tanımlanan urun ID girerek urun rafa eklendi ve urunlerMap’e işlendi.
+     Not: Her iki method’da da gerekli kontrol ve recursive ve method call’lar yapıldı.
+     urunListele:
+     Basit bir printf ile listedeki urunler ekrana verildi.
+     urunCikisi implements SATIS
+     urunCikisi(): Girilen ID bilgisine göre depodan kullanıcıdan alınan miktar oranında çıkış sağlandı. Eldeki miktar kontrol edilerek gerekli kontrol yapıldı. Değişiklik urunlerMap’e eklendi.
